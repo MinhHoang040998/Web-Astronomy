@@ -1,0 +1,117 @@
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Kanit';
+    font-size: 1.6rem;
+    height: 1860px;
+}
+
+$color-blue: #0ab7fa;
+$color-gray: #7a7a7a;
+$color-white: #fff;
+$color-black: #000;
+$font-bold-pc: 600;
+$font-size-bold: 2.2rem;
+
+.home{
+
+}
+
+.navbar{
+    width: 100%;
+    height: 4.4rem;
+    background-color: black;
+    display: flex;
+    color: $color-white;
+    align-items: center;
+
+    &__logo{
+        width: 10%;
+        margin-left: 12rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    &-img__logo{
+        width: 100%;
+    }
+
+    &-live{
+        width: 4%;
+        margin-left: 2rem;
+    }
+
+    &__real{
+
+    }
+
+    &-select{
+        display: flex;
+        width: 80rem;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    &-none__margin{
+        margin-left: -2rem;
+    }
+
+    &-folder{
+        margin-left: 8rem;
+        line-height: 4.3rem;
+        cursor: pointer;
+
+        &__planets{
+            position: relative;
+        }
+
+        &__text{
+            font-size: $font-size-bold;
+            font-weight: 500;
+            text-transform: uppercase;
+        }
+    }
+
+    &-dropdown{
+        position: absolute;
+
+        &__planet{
+            color: $color-black;
+            list-style: none;
+        }
+
+        &__event{
+            color: $color-black;
+            list-style: none;
+        }
+    }
+
+    &-text__planet{
+        padding: 1rem 0px 1rem 2rem;
+        width: 18rem;
+        background-color: $color-white;
+        border-bottom: 2px solid $color-gray;
+        box-shadow: 5px 10px 18px #888888;
+        font-size: $font-size-bold;
+    }
+
+    &-text__event{
+        padding: 1rem 0px 1rem 2rem;
+        width: 28rem;
+        background-color: $color-white;
+        border-bottom: 2px solid $color-gray;
+        box-shadow: 5px 10px 18px #888888;
+        font-size: $font-size-bold;
+    }
+
+
+    &-timelives{
+        margin-left: auto;
+        margin-right: 12rem;
+    }
+
+    
+}

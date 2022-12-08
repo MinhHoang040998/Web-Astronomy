@@ -1,0 +1,1081 @@
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Kanit";
+  font-size: 1.6rem;
+}
+
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+.astronomy-home {
+  background-color: #000;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+input#nav-res-input {
+  display: none;
+}
+
+.nav-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  animation: fadeIn linear 0.2s;
+}
+
+#header {
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 74px;
+  background-color: black;
+}
+
+.header-res {
+  transition: transform linear 0.2s;
+  display: none;
+  transform: translateX(100%);
+  right: 0rem;
+  position: fixed;
+  top: 0rem;
+  bottom: 0;
+  width: 16rem;
+  max-width: 100%;
+  background-color: #fff;
+}
+
+#nav-res {
+  color: #000;
+  font-size: 1.4rem;
+  margin-left: 0.5rem;
+  margin-top: 3rem;
+}
+
+.subnav-res {
+  text-decoration: none;
+  color: #333;
+  display: block;
+  padding: 8px 0;
+}
+
+#icon-res {
+  top: 0.5rem;
+  color: #666;
+  position: absolute;
+  font-size: 1.4rem;
+  left: 0.5rem;
+}
+
+i#icon-mobile {
+  display: none;
+}
+
+#logo_img {
+  position: absolute;
+  margin-left: 20px;
+}
+
+#nav, .subnav {
+  list-style-type: none;
+}
+
+ul#nav {
+  position: absolute;
+  margin-left: 280px;
+  margin-top: -24px;
+}
+
+#nav > li {
+  display: inline-block;
+}
+
+#nav li {
+  position: relative;
+  margin-left: -2rem;
+}
+
+#nav > li > a {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+#nav li a {
+  text-decoration: none;
+  line-height: 74px;
+  padding: 0px 60px;
+  font-size: 20px;
+  display: block;
+}
+
+li.astronomy-home__time-lives {
+  color: white;
+}
+
+li.astronomy-home__numberlives {
+  color: white;
+}
+
+#nav li:hover .subnav {
+  display: block;
+}
+
+#nav .subnav li:hover a,
+#nav > li:hover > a {
+  color: #000;
+  background-color: rgb(207, 207, 207);
+}
+
+#nav .subnav {
+  text-align: center;
+  width: 100%;
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#nav .subnav a {
+  color: #000;
+  padding: 0 10px;
+  line-height: 50px;
+}
+
+
+/*navbar*/
+.bg-dark {
+  background: #000 !important;
+  
+}
+
+/*content*/
+.bg-light {
+  background: rgb(14, 14, 14) !important;
+}
+.card-body {
+  background-color: #000;
+  color: #fff;
+}
+
+/*--------------------*/
+
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+
+  .list-unstyled a {
+    text-decoration: none;
+}
+
+.fw-light {
+  color: antiquewhite;
+  padding-top: 46px;
+}
+
+/*times*/
+.time-navbar {
+  color: #fff;
+  font-size: 18px;
+  padding-top: 12px;
+  opacity: 0.7;
+}
+
+.dropdown-toggle::after {
+  display: none !important;
+}
+
+  @media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+    }
+  }
+
+  .b-example-divider {
+    height: 3rem;
+    background-color: rgba(0, 0, 0, .1);
+    border: solid rgba(0, 0, 0, .15);
+    border-width: 1px 0;
+    box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+  }
+
+  .b-example-vr {
+    flex-shrink: 0;
+    width: 1.5rem;
+    height: 100vh;
+  }
+  .bi {
+    vertical-align: -.125em;
+    fill: currentColor;
+  }
+
+  .nav-scroller {
+    position: relative;
+    z-index: 2;
+    height: 2.75rem;
+    overflow-y: hidden;
+  }
+
+  .nav-scroller .nav {
+    display: flex;
+    flex-wrap: nowrap;
+    padding-bottom: 1rem;
+    margin-top: -1px;
+    overflow-x: auto;
+    text-align: center;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+  }
+
+.mb-1 a {
+    text-decoration: none;
+   color: #000;
+}
+
+.mb-1 li {
+    list-style: none;
+}
+
+/*menu*/
+.navbar-dark .navbar-nav .nav-link {
+  color: #fff !important;
+  line-height: 50px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 72px;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  background-color: #ccc;
+}
+
+
+.dropdown-menu a {
+  color: #000;
+  font-size: 20px;
+}
+
+
+.navbar-all li a {
+  display: block;
+  color: #000;
+  font-weight: 400;
+  font-size: 10px;
+}
+.navbar-all .dropdown-item{
+  font-size: 15px;
+}
+
+#navbarNavDropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(174, 172, 172, 0.2);
+  z-index: 1;
+  width: 100%;
+}
+
+.dropdown-content a {
+  color: #000;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ccc;color: #000;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+
+
+/*view-section*/
+.view-section a{
+  text-decoration: none;
+  color: #ccc;
+}
+
+/* footer */
+
+.footer {
+  width: 100%;
+  height: 400px;
+  position: relative;
+}
+
+.footer__bg {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  overflow: hidden;
+  position: relative;
+}
+
+.footer__infor {
+  width: 100%;
+  position: absolute;
+  color: white;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  padding-top: 7rem;
+  margin-right: 20px;
+  align-items: center;
+  z-index: 2;
+}
+
+.footer__icon-phone {
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border-right: 3px solid #0ab7fa;
+}
+
+.footer__icon-times {
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border-right: 3px solid #0ab7fa;
+}
+
+.footer__icon-address {
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.footer__icon-infor {
+  font-size: 2rem;
+  padding-bottom: 2rem;
+}
+
+.footer__infor-name {
+  font-size: 2rem;
+  padding-bottom: 1rem;
+}
+
+.footer__desc {
+  padding-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.map {
+  width: 100%;
+  height: 500px;
+}
+
+.map__address {
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+}
+
+.map__img {
+  width: 100%;
+  height: 500px;
+}
+
+#progress {
+  position: fixed;
+  bottom: 20px;
+  right: 5rem;
+  height: 70px;
+  width: 70px;
+  display: none;
+  place-items: center;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+#progress-value {
+  display: block;
+  height: 50px;
+  width: 50px;
+  background-color: white;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 25px;
+  color: #001a2e;
+}
+
+
+@media screen and (max-width: 800px) {
+  #navbarNavDropdown {
+    display: none;
+  }
+  .dropdown:hover .dropdown-content {display: block;}
+}
+/*scroll bar*/
+#progress {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  height: 60px;
+  width: 60px;
+  z-index: 100;
+  place-items: center;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgb(0 0 0 / 10%);
+  cursor: pointer;
+}
+
+#progress-value {
+  display: block;
+  height: 40px;
+  width: 40px;
+  background-color: white;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 25px;
+  color: #001a2e;
+}
+
+
+.icon-contact {
+  list-style: none;
+  font-size: 30px;
+  color: #fff;
+ }
+.follow-us {
+  color: #fff;
+  display: flex;
+  margin-left: 250px;
+  margin-top: -80px;
+}
+
+
+
+/*Modal*/
+
+.dialog {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity linear 0.2s;
+}
+
+.overlay-close {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  cursor: default;
+}
+
+.dialog:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* .overlay {
+  background-color: #ccc;
+  opacity: 0.3;
+} */
+.dialog-body {
+  color: #fff;
+  width: 800px;
+  height: 450px;
+  /* max-width: 400px; */
+  position: relative;
+  padding: 0 200px;
+  background-color: #000;
+}
+
+.dialog-close-btn {
+  position: absolute;
+  font-size: 40px;
+  top: 2px;
+  right: 20px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.dialog-close-btn:hover {
+  color: aqua;
+}
+
+.info-galaxy {
+  /* float: right; */
+  text-align: center;
+}
+
+
+/*Modal 2*/
+.dialog1 {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity linear 0.2s;
+}
+
+.overlay-close {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  cursor: default;
+}
+
+.dialog1:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+.info-galaxy1 {
+  /* float: right; */
+  text-align: center;
+}
+
+/*Modal 3 */
+
+.dialog3 {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity linear 0.2s;
+}
+.dialog3:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.info-galaxy3 {
+  /* float: right; */
+  text-align: center;
+}
+
+/*Modal 4*/
+.dialog4 {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity linear 0.2s;
+}
+.dialog4:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.info-galaxy4 {
+  /* float: right; */
+  text-align: center;
+}
+
+
+/*Modal 5*/
+.dialog5 {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity linear 0.2s;
+}
+.dialog5:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.info-galaxy5 {
+  /* float: right; */
+  text-align: center;
+}
+/*Modal 6*/
+.dialog6 {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity linear 0.2s;
+}
+.dialog6:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.info-galaxy6 {
+  /* float: right; */
+  text-align: center;
+}
+/*Modal 7*/
+.dialog7 {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity linear 0.2s;
+}
+.dialog7:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.info-galaxy7 {
+  /* float: right; */
+  text-align: center;
+}
+/*Modal 8*/
+.dialog8 {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity linear 0.2s;
+}
+.dialog8:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.info-galaxy8 {
+  /* float: right; */
+  text-align: center;
+}
+/*Modal 9*/
+.dialog9 {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity linear 0.2s;
+}
+.dialog9:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.info-galaxy9 {
+  /* float: right; */
+  text-align: center;
+}
+
+/* feeback from */
+
+.footer {
+  width: 100%;
+  height: 370px;
+  position: relative;
+}
+.footer__infor {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: grid;
+  padding-top: 2rem;
+  margin-right: 0px;
+}
+.footer__icon-phone {
+  border-right: none;
+}
+.footer__infor-name {
+  font-size: 1rem;
+}
+.footer__icon-times {
+  border-right: none;
+}
+.footer__bg {
+  height: 37rem;
+}
+
+
+@media only screen and (max-width: 46.1875em) {
+  i#icon-mobile {
+    font-size: 3rem;
+    position: absolute;
+    color: #fff;
+    display: block;
+    right: 10%;
+    top: 20%;
+    transform: translate(-10%, -20%);
+    padding: 0.5rem;
+  }
+  #logo_img {
+    position: relative;
+    margin-left: 2rem;
+    height: 40px;
+    width: 120px;
+    margin-top: 0px;
+    margin-top: 1.2rem;
+  }
+
+  #logo_img img{
+    width: 100%;
+    margin-left: 1rem;
+    margin-top: 12%;
+  }
+  
+  ul#nav {
+    display: none;
+  }
+  .header-res {
+    display: block;
+    width: 200px;
+    overflow: scroll;
+  }
+  .nav-res__menu {
+    margin-bottom: 3rem;
+    overflow: scroll;
+    margin-left: 2rem;
+  }
+  .nav-menu__child {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    background-color: #f2f2f2;
+    height: 3rem;
+    line-height: 3rem;
+  }
+  #header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    top: 0;
+  }
+  #logo_img {
+    margin-left: 0;
+    position: relative;
+  }
+  i#icon-mobile {
+    font-size: 3rem;
+    position: relative;
+    color: #fff;
+    display: block;
+    padding: 0.5rem;
+  }
+  .content {
+    height: 78rem !important;
+  }
+  .content-add {
+    height: 70rem !important;
+  }
+  i#icon-res {
+    display: block;
+    position: relative;
+  }
+  .p#text_planet,
+#planet_name,
+.planet_info,
+.planet_distance {
+    display: none;
+  }
+  .content-img {
+    height: 32rem;
+  }
+  .subnav-res1,
+.subnav-res2,
+.subnav-res3 {
+    padding-left: 2rem;
+    display: none;
+  }
+  .nav-input:checked ~ .header-res {
+    transform: translateX(0%);
+    top: 0;
+  }
+  .nav-input:checked ~ .nav-overlay {
+    display: block;
+  }
+  #nav-down1:checked ~ .subnav-res1 {
+    display: block;
+  }
+  #nav-down2:checked ~ .subnav-res2 {
+    display: block;
+  }
+  #nav-down3:checked ~ .subnav-res3 {
+    display: block;
+  }
+  input#nav-down1 {
+    display: none;
+  }
+  input#nav-down2 {
+    display: none;
+  }
+  input#nav-down3 {
+    display: none;
+  }
+  details {
+    border: 0.2rem solid #aaa;
+  }
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+}
+
+/* ipad */
+
+@media only screen and (min-width: 46.25em) and (max-width: 63.9375em) {
+  i#icon-mobile {
+    font-size: 3rem;
+    position: absolute;
+    color: #fff;
+    display: block;
+    right: 5%;
+    top: 20%;
+    transform: translate(-5%, -20%);
+    padding: 0.5rem;
+  }
+  #logo_img {
+    position: relative;
+    margin-left: 2rem;
+    width: 160px;
+    object-fit: contain;
+    margin-top: 0px;
+  }
+  ul#nav {
+    display: none;
+  }
+  .header-res {
+    display: block;
+    width: 300px;
+    overflow: scroll;
+  }
+  #nav-res {
+    color: #000;
+    font-size: 1.4rem;
+    margin-left: 4.5rem;
+    margin-top: 3rem;
+    overflow: scroll;
+  }
+  .nav-res__menu {
+    margin-bottom: 3rem;
+    overflow: scroll;
+  }
+  .nav-menu__child {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    background-color: #f2f2f2;
+    height: 3rem;
+    line-height: 3rem;
+  }
+  #header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    top: 0;
+  }
+  .content {
+    height: 78rem !important;
+  }
+  .content-add {
+    height: 70rem !important;
+  }
+  i#icon-res {
+    display: block;
+    position: relative;
+  }
+  .p#text_planet,
+#planet_name,
+.planet_info,
+.planet_distance {
+    display: none;
+  }
+  .content-img {
+    height: 32rem;
+  }
+  .subnav-res1,
+.subnav-res2,
+.subnav-res3 {
+    padding-left: 2rem;
+    display: none;
+  }
+  .nav-input:checked ~ .header-res {
+    transform: translateX(0%);
+    top: 0;
+  }
+  .nav-input:checked ~ .nav-overlay {
+    display: block;
+  }
+  #nav-down1:checked ~ .subnav-res1 {
+    display: block;
+  }
+  #nav-down2:checked ~ .subnav-res2 {
+    display: block;
+  }
+  #nav-down3:checked ~ .subnav-res3 {
+    display: block;
+  }
+  input#nav-down1 {
+    display: none;
+  }
+  input#nav-down2 {
+    display: none;
+  }
+  input#nav-down3 {
+    display: none;
+  }
+  details {
+    border: 0.2rem solid #aaa;
+  }
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+}
+
+
+@media only screen and (min-width: 1024px) and (max-width: 1366px) {
+  #img_planet {
+    margin-top: 4rem;
+  }
+  #nav li a {
+    padding: 0px 35px;
+    font-size: 17px;
+  }
+  #nav .subnav a {
+    padding: 0 0px;
+  }
+  #logo_img {
+    margin-left: 0;
+  }
+
+  #logo_img img {
+    width: 75%;
+    margin-top: 4%;
+    margin-left: 5%;
+  }
+
+
+  .astronomy-home__time-lives{
+    display: none;
+  }
+  
+  ul#nav {
+    position: absolute;
+    margin-left: 180px;
+    margin-top: -24px;
+  }
+}
+
+
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2000;
+  background-color: #090420;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.disppear {
+  animation: vanish 2s forwards;
+}
+
+@keyframes vanish {
+  100% {
+    display: none;
+    visibility: hidden;
+  }
+}

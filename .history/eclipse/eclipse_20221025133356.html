@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/eclipse.css">
+    <link rel="stylesheet" href="../reset/reset.css">
+    <link rel="stylesheet" href="../grid/grid_astronomy.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+
+    <!-- bootrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+<body>
+    <div class="astronomy-home">
+        <div class="astronomy-home__tabnav">
+            <!-- logo -->
+            <img src="./img/logo png.png" alt="logo astronomy" class="astronomy-home__logo">
+            <!-- live -->
+            <p class="astronomy-home__numberlives">live: 220</p>
+
+            <!-- menu -->
+                <div class="astronomy-home__tabchild">
+                    <div class="astronomy-home__menuPlanets">
+                        <h3 class="astronomy-home__text">planets</h3>
+                        <div class="astronomy-home__menu-first">
+                            <ul class="astronomy-home__menu-first-Planets">
+                                <li class="astronomy-home__menu-item-Planets">Mercury</li>
+                                <li class="astronomy-home__menu-item-Planets">Venus</li>
+                                <li class="astronomy-home__menu-item-Planets">Earth</li>
+                                <li class="astronomy-home__menu-item-Planets">Mars</li>
+                                <li class="astronomy-home__menu-item-Planets">Jupiter</li>
+                                <li class="astronomy-home__menu-item-Planets">Saturn</li>
+                                <li class="astronomy-home__menu-item-Planets">Uranus</li>
+                                <li class="astronomy-home__menu-item-Planets">Neptune</li>
+                                <li class="astronomy-home__menu-item-Planets">Dwarf Planet</li>
+                                <li class="astronomy-home__menu-item-Planets">Planet Nine</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+
+            <div class="astronomy-home__tabchild">
+                <div class="astronomy-home__menuEvents">
+                    <h3 class="astronomy-home__text">events the planets</h3>
+                    <div class="astronomy-home__menu-seconds">
+                        <ul class="astronomy-home__menu-seconds-events">
+                            <li class="astronomy-home__menu-item-events"><a href="../Eclipse_events/Eclipse.html" class="astronomy-home__EclipseLink">Eclipse</a></li>
+                            <li class="astronomy-home__menu-item-events"><a href="../bigbang_events/bigbang.html" class="astronomy-home__bigbangeLink">BigBang</a></li>
+                            <li class="astronomy-home__menu-item-events"><a href="../evolved_Earth/evolved-Earth.html" class="astronomy-home__EvolvedLink">Evolved Earth</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="astronomy-home__tabchild">
+                <div class="astronomy-home__menuMore">
+                    <h3 class="astronomy-home__text">more</h3>
+                    <div class="astronomy-home__menu-three">
+                        <ul class="astronomy-home__menu-three-more">
+                            <li class="astronomy-home__menu-item-more">StarGazing</li>
+                            <li class="astronomy-home__menu-item-more">Comet</li>
+                            <li class="astronomy-home__menu-item-more">Constellation</li>
+                            <li class="astronomy-home__menu-item-more">News</li>
+                            <li class="astronomy-home__menu-item-more">Observatories</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="astronomy-home__tabchild">
+                <div class="astronomy-home__menuAbout">
+                    <h3 class="astronomy-home__text">about</h3>
+                    <div class="astronomy-home__menu-four">
+                        <ul class="astronomy-home__menu-four-about">
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="astronomy-home__time-lives">
+                <span>Times live:</span>
+                <span id="hours">00</span>
+                <span>:</span>
+                <span id="minutes">00</span>
+                <span>:</span>
+                <span id="seconds">00</span>
+                <span id="session">AM</span>
+            </div>
+            
+            <div class="astronomy-home__menu-child">
+                <i class="fa-sharp fa-solid fa-bars astronomy-home__icon-menu"></i>
+            </div>
+
+        </div>
+
+        <div class="banner">
+
+            <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="10000">
+                    <img src="..." class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>First slide label</h5>
+                      <p>Some representative placeholder content for the first slide.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-bs-interval="2000">
+                    <img src="..." class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Second slide label</h5>
+                      <p>Some representative placeholder content for the second slide.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="..." class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Third slide label</h5>
+                      <p>Some representative placeholder content for the third slide.</p>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+
+        </div>
+    </div>
+
+      <!-- bootrap js -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

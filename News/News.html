@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./News.css">
+    <link rel="stylesheet" href="../grid/grid_astronomy.css">
+    <link rel="stylesheet" href="css/Grid2.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="Js/main.js"></script>
+    <script src="Js/time-out.js"></script>
+    <title>News</title>
+    <link rel="shortcut icon" type="images/png" href="/Sky_Gazing/images/solar-system.ico"/>
+</head>
+<body>
+
+    <div class="loader disppear" >
+        <img src="../loading/9b1398619fa808505a7dbd6da70b2ff1.gif" alt="">
+    </div>
+
+    <div id="main">
+        <div id="header">
+            <input type="checkbox" name="" class="nav-input" id="nav-res-input">
+            <label for="nav-res-input" class="nav-overlay"></label>
+            <div id="logo_img">
+                <a href="../Skygazing.com.html"><img src="./images/logo png.png" alt="Logo"></a>
+            </div>
+            <label for="nav-res-input"><i id="icon-mobile" class="bi bi-list"></i></label>
+            <ul id="nav">
+                <li class="astronomy-home__numberlives">live: 220</li>
+                <li><a href="Planets.html">Planets</a>
+                    <ul class="subnav">
+                        <li><a href="../planet/Mercury.html">Mercury</a></li>
+                        <li><a href="../planet/Venus.html">Venus</a></li>
+                        <li><a href="../planet/Earth.html">Earth</a></li>
+                        <li><a href="../planet/Mars.html">Mars</a></li>
+                        <li><a href="../planet/Jupiter.html">Jupiter</a></li>
+                        <li><a href="../planet/Saturn.html">Saturn</a></li>
+                        <li><a href="../planet/Uranus.html">Uranus</a></li>
+                        <li><a href="../planet/Neptune.html">Neptune</a></li>
+                        <li><a href="../planet/Planets.html">Pluto</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Events The Planets</a>
+                    <ul class="subnav">
+                        <li><a href="../eclipse/eclipse.html">Eclipse</a></li>
+                        <li><a href="../bigbang/bigbang.html">BigBang</a></li>
+                        <li><a href="../EvolveEarth/EvolveEarth.html">Evolved Earth</a></li>
+                    </ul>
+                </li>  
+                <li><a href="#">More</a>
+                    <ul class="subnav">
+                        <li><a href="../star-gazing/star-gazing.html">StarGazing</a></li>
+                        <li><a href="../comet-event/comet.html">Comet</a></li>
+                        <li><a href="./News.html">News</a></li>
+                        <li><a href="../Album2/index.html">Albums</a></li>
+                        <li><a href="../Observation/Observation.html">Observatories</a></li>
+                    </ul>
+                </li>
+                <li><a href="../about-us/About-us.html">About Us</a></li> 
+                <li class="astronomy-home__time-lives">
+                    <span>Times live:</span>
+                    <span id="hours">00</span>
+                    <span>:</span>
+                    <span id="minutes">00</span>
+                    <span>:</span>
+                    <span id="seconds">00</span>
+                    <span id="session">AM</span>
+                </li>
+            </ul> 
+            <div class="header-res">   
+                <label for="nav-res-input"><i id="icon-res" class="bi bi-x-lg"></i></label>
+                
+                <ul id="nav-res">
+                    <li class="nav-res__menu"><a href="Planets.html">Planets</a>
+                        <input type="checkbox" id="nav-down1">
+                        <label for="nav-down1"><i class="bi bi-caret-down-fill"></i></label>
+                        <ul class="subnav-res1">
+                            <li class="nav-menu__child"><i class="bi bi-dash"></i></i><a href="../planet/Mercury.html">Mercury</a></li>
+                            <li class="nav-menu__child"><i class="bi bi-dash"></i></i><a href="../planet/Venus.html">Venus</a></li>
+                            <li class="nav-menu__child"><i class="bi bi-dash"></i></i><a href="../planet/Earth.html">Earth</a></li>
+                            <li class="nav-menu__child"><i class="bi bi-dash"></i></i></i><a href="../planet/Mars.html">Mars</a></li>
+                            <li class="nav-menu__child"><i class="bi bi-dash"></i></i></i><a href="../planet/Jupiter.html">Jupiter</a></li>
+                            <li class="nav-menu__child"><i class="bi bi-dash"></i></i><a href="../planet/Saturn.html">Saturn</a></li>
+                            <li class="nav-menu__child"><i class="bi bi-dash"></i></i><a href="../planet/Uranus.html">Uranus</a></li>
+                            <li class="nav-menu__child"><i class="bi bi-dash"></i></i><a href="../planet/Neptune.html">Neptune</a></li>
+                            <li class="nav-menu__child"><i class="bi bi-dash"></i></i><a href="../planet/Pluto.html">Pluto</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-res__menu"><a href="#">Events The Planets</a>
+                        <input type="checkbox" id="nav-down2">
+                        <label for="nav-down2"><i class="bi bi-caret-down-fill"></i></label>
+                        <ul class="subnav-res2">
+                            <li class="nav-menu__child"><i class="bi bi-dash"></i></i><a href="../eclipse/eclipse.html">Eclipse</a></li>
+                            <li class="nav-menu__child"><i class="bi bi-dash"></i></i><a href="../bigbang/bigbang.html">BigBang</a></li>
+                            <li class="nav-menu__child"><i class="bi bi-dash"></i></i><a href="../EvolveEarth/EvolveEarth.html">Evolved Earth</a></li>
+                        </ul>
+                    </li>  
+                    <li class="nav-res__menu"><a href="#">More</a>
+                        <input type="checkbox" id="nav-down3">
+                        <label for="nav-down3"><i class="bi bi-caret-down-fill"></i></label>
+                        <ul class="subnav-res3">
+                            <li class="nav-menu__child"><i class="bi bi-dash"></i></i><a href="../star-gazing/star-gazing.html">StarGazing</a></li>
+                            <li class="nav-menu__child"><i class="bi bi-dash"></i></i><a href="../comet-event/comet.html">Comet</a></li>
+                            <li class="nav-menu__child"><i class="bi bi-dash"></i></i><a href="./News.html">News</a></li>
+                            <li class="nav-menu__child"><i class="bi bi-dash"></i></i><a href="../Album2/index.html">Albums</a></li>
+                            <li class="nav-menu__child"><i class="bi bi-dash"></i></i><a href="../Observation/Observation.html">Observatories</a></li>
+                            
+                        </ul>
+                    </li>
+                    <li class="nav-res__menu"><a href="../about-us/About-us.html">About Us</a></li>
+                </ul>  
+            </div> 
+        </div>
+        <div class="slider">
+            <img id="img_planet" src="images/universe-space.jpg" alt="space">
+        </div>
+
+        <div class="slider-responsive">
+            <img id="img_responsive" src="images/universe-space.jpg" alt="space">
+        </div>
+
+        <div  class="content-img">
+            <h2 data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1500" id="text-slider">Advances in the Field of Astronomy: Shaping our Future</h2>
+          
+            <p data-aos="fade-up"
+            data-aos-duration="3000" id="text-open"><i class="bi bi-check2-circle"></i> Innovation in astronomy requires thinking far ahead, considering what the cutting-edge technology of the next century will mean for how we study the cosmos. Tomorrow’s heroes of astronomy are already hard at work today, imagining new telescopes that will be decades in the making and unveiling new discoveries that will shape our future picture of the universe.</p>
+            
+        <div class="content">
+            <h2 data-aos="fade-up"
+            data-aos-duration="3000" id="title-planet-name">Innovative Astronomers</h2>
+            <img data-aos="zoom-out" id="img-nasa" src="images/news1.jpg" alt="solar-system" ></img>   
+           <div class="explo-planet"> 
+               <div data-aos="fade-up"
+               data-aos-duration="3000" class="text-explo">
+                   <p class="text-pln-nasa"> 
+                    <i class="bi bi-check2-circle"></i> Capturing the brief flash of a supernova or the motion of a tiny comet or asteroid across the immensity of the night sky is no small task. Since the 1960s, teams of innovative astronomers have taken on the herculean job of surveying the entire night sky, using a diverse array of telescopes and tools to painstakingly catalogue everything that we can see.
+                   </p>
+                   <p class="text-pln-nasa"> 
+                    <i class="bi bi-check2-circle"></i> Early efforts included surveys of the Northern Sky using endless stacks of photographic plates and ongoing observations by large networks of amateur astronomers, willing to dedicate their backyard observatories to long and detailed studies of anything that might be changing in the sky.
+                   </p>
+                   <details>
+                       <summary>More Details</summary>
+                       <p class="text-pln-nasa">
+                        Today, teams have launched space telescopes designed to observe every star in the entire Milky Way galaxy and a ground-breaking new telescope in the Southern Hemisphere that will soon begin a 10-year-long campaign to continuously photograph the entire sky every few nights.
+                       </p>
+                       <p class="text-pln-nasa">
+                        With so many large and heroic teams conducting all-sky surveys and achieving marvels of engineering to study gravitational waves and put telescopes into space, it can be easy to imagine that the whole planet shares this dedication to astronomy research.
+                       </p>
+                   </details>
+               </div>      
+           </div>          
+   </div>
+
+   <div class="content">
+    <h2 data-aos="fade-up"
+    data-aos-duration="3000" id="title-planet-name">Asteroids and Comets</h2>
+    <img data-aos="zoom-out" id="img-nasa" src="images/news2.jpg" alt="solar-system" ></img>   
+   <div class="explo-planet"> 
+       <div data-aos="fade-up"
+       data-aos-duration="3000" class="text-explo">
+           <p class="text-pln-nasa"> 
+            <i class="bi bi-check2-circle"></i> One clear and immediate connection between the mysteries of space and life here on Earth are asteroids and comets. These small citizens of our own solar system might one day come close (perhaps even a bit too close) to our home.
+           </p>
+           <p class="text-pln-nasa"> 
+            <i class="bi bi-check2-circle"></i> Finding and studying nearby objects like these is thus an important part of astronomy. It is crucial part of understanding our solar system and the fate and history of our planet.
+           </p>
+           <details>
+               <summary>More Details</summary>
+               <p class="text-pln-nasa">
+                Astronomers like Gene and Carolyn Shoemaker built up a long and prolific history of discovering and studying comets and asteroids along with their potential impact. One dramatic example was observed by astronomers and stargazers all over the world in 1994 when comet Shoemaker-Levy 9 struck Jupiter.
+               </p>
+               <p class="text-pln-nasa">
+                More recently, large survey and robotic campaigns have taken up the mantle, with teams of people monitoring the sky, searching for asteroids and comets throughout the solar system, and learning more about these fascinating little members of our solar system along the way.
+               </p>
+           </details>
+       </div>      
+   </div>          
+</div>
+
+<div class="content">
+    <h2 data-aos="fade-up"
+    data-aos-duration="3000" id="title-planet-name">Pluto</h2>
+    <img data-aos="zoom-out" id="img-nasa" src="images/news3.jpg" alt="solar-system" ></img>   
+   <div class="explo-planet"> 
+       <div data-aos="fade-up"
+       data-aos-duration="3000" class="text-explo">
+           <p class="text-pln-nasa"> 
+            <i class="bi bi-check2-circle"></i> It’s hard to talk about small solar system citizens without also thinking of Pluto, our little former ninth planet, and wondering what, exactly, happened to it. The astronomical heroes (or maybe anti-heroes) behind Pluto’s journey from discovery to demotion span more than 70 years.
+           </p>
+           <details>
+               <summary>More Details</summary>
+               <p class="text-pln-nasa">
+                In 1930, Clyde Tombaugh discovered Pluto and classified it as the ninth planet in our solar system. In 1960, Julio Fernández predicted that an enormous and crowded belt of small rocky objects should surround the outside of our solar system, just at and beyond Pluto’s orbit.
+               </p>
+               <p class="text-pln-nasa">
+                However, it was only in 1992 that David Jewitt and Jane Luu discovered the first observational evidence of this belt. The research that followed ultimately led to Pluto’s demotion from planet status in 2006, along with a significantly expanded picture of our solar system and its outer boundaries.
+               </p>
+           </details>
+       </div>      
+   </div>          
+</div>
+
+<div class="content">
+    <h2 data-aos="fade-up"
+    data-aos-duration="3000" id="title-planet-name">Studying the Sun’s Evolution</h2>
+    <img data-aos="zoom-out" id="img-nasa" src="images/news4.jpg" alt="solar-system" ></img>   
+   <div class="explo-planet"> 
+       <div data-aos="fade-up"
+       data-aos-duration="3000" class="text-explo">
+           <p class="text-pln-nasa"> 
+            <i class="bi bi-check2-circle"></i> At the heart of our solar system, our own Sun has also been an immense font of information about astronomy and the inner physics of stars.
+           </p>
+           <details>
+               <summary>More Details</summary>
+               <p class="text-pln-nasa">
+                Solar physicists have used enormous tanks of liquid to detect neutrinos, tiny subatomic particles, that emerge from the sun’s core and act as miniscule ambassadors from the immensely hot and dense heart of a star.
+               </p>
+               <p class="text-pln-nasa">
+                Astronomers have also been mounting heroic solar eclipse expeditions, with observations carried out in some of the most remote corners of the globe to study gravity, magnetism, and the sun’s evolution. This fascinating array of techniques and creative ideas in the field of astronomy have allowed us to harness the scientific power of our closest stellar neighbor.
+               </p>
+           </details>
+       </div>      
+   </div>          
+</div>
+
+<div class="content">
+    <h2 data-aos="fade-up"
+    data-aos-duration="3000" id="title-planet-name">Exoplanets</h2>
+    <img data-aos="zoom-out" id="img-nasa" src="images/news5.jpg" alt="solar-system" ></img>   
+   <div class="explo-planet"> 
+       <div data-aos="fade-up"
+       data-aos-duration="3000" class="text-explo">
+           <p class="text-pln-nasa"> 
+            <i class="bi bi-check2-circle"></i> For years, astronomers imagined other stars to be potentially hosting other distant solar systems. In 1992, these imaginings became a reality. Aleksander Wolszczan and Dale Frail announced the first discovery of two exoplanets, or planets orbiting another star.
+           </p>
+           <details>
+               <summary>More Details</summary>
+               <p class="text-pln-nasa">
+                From this first discovery, astronomers have gone on to detect thousands of exoplanets, refining their observational techniques and building new space telescopes specifically designed to find these tiny and distant stellar companions.
+               </p>
+               <p class="text-pln-nasa">
+                Today teams of astronomers are working on discovering new exoplanets and exploring what new worlds might look like in planetary systems across our galaxy.
+               </p>
+           </details>
+       </div>      
+   </div>          
+</div>
+
+<div class="footer">
+
+    <div class="footer__bg">
+        <img src="images/Star.jpg" alt="bg-footer">
+        
+        <div class="footer__infor">
+
+            <div class="footer__icon-phone">
+                <i class="fa-solid fa-phone footer__icon-infor"></i>
+                <span class="footer__infor-name">Contact Information</span>
+                <span class="footer__desc">0886313048</span>
+                <span class="footer__desc">SkyGazing@gmail.com</span>
+            </div>
+
+            <div class="footer__icon-times">
+                <i class="fa-solid fa-clock footer__icon-infor"></i>
+                <span class="footer__infor-name">Times</span>
+                <span class="footer__desc">Days of the week</span>
+                <span class="footer__desc">(8:00 AM to 10:00 PM)</span>
+            </div>
+
+            <div class="footer__icon-address">
+                <i class="fa-solid fa-location-dot footer__icon-infor"></i>
+                <span class="footer__infor-name">Address</span>
+                <span class="footer__desc">Fpt Aptech Hà Nội</span>
+                <span class="footer__desc">(Tôn thất thuyết, Mỹ Đình 2, Nam Từ Liêm, Hà Nội)</span>
+            </div>
+       
+        </div>
+    </div>
+
+</div>
+
+<div class="map">
+    <div class="map__address">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.0966092835115!2d105.78010801471528!3d21.028820085998362!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab86cece9ac1%3A0xa9bc04e04602dd85!2zRlBUIEFwdGVjaCBIw6AgTuG7mWkgLSBI4buHIFRo4buRbmcgxJDDoG8gVOG6oW8gTOG6rXAgVHLDrG5oIFZpw6puIFF14buRYyBU4bq_IChTaW5jZSAxOTk5KQ!5e0!3m2!1svi!2s!4v1665652904057!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map__img"></iframe>
+    </div>
+</div>
+</div>
+</div>
+
+<div id="progress">
+    <i class="fa-solid fa-arrow-up" id="progress-value"></i>
+</div>
+
+</body>
+<script src="Js/img-slider.js"></script>
+<script src="./news.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+  </script>
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/star-gazing.css">
+    <link rel="stylesheet" href="../reset/reset.css">
+    <link rel="stylesheet" href="../grid/grid_astronomy.css">
+    <link rel="stylesheet" href="./js/star-gazing.js">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Star-Gazing</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+<body>
+    <div class="astronomy-home">
+
+        <!-- menu -->
+
+        <div id="header">
+            <input type="checkbox" name="" class="nav-input" id="nav-res-input">
+            <label for="nav-res-input" class="nav-overlay"></label>
+            <div id="logo_img">
+                <a href="../Home/Skygazing.com.html"><img src="./img/logo png.png" alt="Logo"></a>
+            </div>
+            <label for="nav-res-input"><i id="icon-mobile" class="bi bi-list"></i></label>
+            <ul id="nav">
+                <li class="astronomy-home__numberlives">live: 220</li>
+                <li><a href="#">Planets</a>
+                    <ul class="subnav">
+                        <li><a href="Mercury.html">Mercury</a></li>
+                        <li><a href="Venus.html">Venus</a></li>
+                        <li><a href="Earth.html">Earth</a></li>
+                        <li><a href="Mars.html">Mars</a></li>
+                        <li><a href="Jupiter.html">Jupiter</a></li>
+                        <li><a href="Saturn.html">Saturn</a></li>
+                        <li><a href="Uranus.html">Uranus</a></li>
+                        <li><a href="Neptune.html">Neptune</a></li>
+                        <li><a href="Pluto.html">Pluto</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Events The Planets</a>
+                    <ul class="subnav">
+                        <li><a href="../eclipse/eclipse.html">Eclipse</a></li>
+                        <li><a href="../bigbang/bigbang.html">BigBang</a></li>
+                        <li><a href="../EvolveEarth/EvolveEarth.html">Evolved Earth</a></li>
+                    </ul>
+                </li>  
+                <li><a href="#">More</a>
+                    <ul class="subnav">
+                        <li><a href="#">StarGazing</a></li>
+                        <li><a href="../comet-event/comet.html">Comet</a></li>
+                        <li><a href="#">Constellation</a></li>
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">Observatories</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">About Us</a></li> 
+                <li class="astronomy-home__time-lives">
+                    <span>Times live:</span>
+                    <span id="hours">00</span>
+                    <span>:</span>
+                    <span id="minutes">00</span>
+                    <span>:</span>
+                    <span id="seconds">00</span>
+                    <span id="session">AM</span>
+                </li>
+            </ul> 
+            <div class="header-res">   
+                <label for="nav-res-input"><i id="icon-res" class="bi bi-x-lg"></i></label>
+                <ul id="nav-res">
+                    <li class="nav-res__menu"><a href="#">Planets</a>
+                        <input type="checkbox" id="nav-down1">
+                        <label for="nav-down1"><i class="bi bi-caret-down-fill"></i></label>
+                        <ul class="subnav-res1">
+                            <li class="nav-menu__child"><i class="bi bi-dash"></i></i><a href="Mercury.html">Mercury</a></li>
+                            <li class="nav-menu__child"><i class="bi bi-dash"></i></i><a href="Venus.html">Venus</a></li>
+                            <li class="nav-menu__child"><i class="bi bi-dash"></i></i><a href="Earth.html">Earth</a></li>
+                            <li class="nav-menu__child"><i class="bi bi-dash"></i></i></i><a href="Mars.html">Mars</a></li>
+                            <li class="nav-menu__child"><i class="bi bi-dash"></i></i></i><a href="Jupiter.html">Jupiter</a></li>
+                            <li class="nav-menu__child"><i class="bi bi-dash"></i></i><a href="Saturn.html">Saturn</a></li>
+                            <li class="nav-menu__child"><i class="bi bi-dash"></i></i><a href="Uranus.html">Uranus</a></li>
+                            <li class="nav-menu__child"><i class="bi bi-dash"></i></i><a href="Neptune.html">Neptune</a></li>
+                            <li class="nav-menu__child"><i class="bi bi-dash"></i></i><a href="Pluto.html">Pluto</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-res__menu"><a href="#">Events The Planets</a>
+                        <input type="checkbox" id="nav-down2">
+                        <label for="nav-down2"><i class="bi bi-caret-down-fill"></i></label>
+                        <ul class="subnav-res2">
+                            <li class="nav-menu__child"><i class="bi bi-dash"></i></i><a href="#">Eclipse</a></li>
+                            <li class="nav-menu__child"><i class="bi bi-dash"></i></i><a href="#">BigBang</a></li>
+                            <li class="nav-menu__child"><i class="bi bi-dash"></i></i><a href="#">Evolved Earth</a></li>
+                        </ul>
+                    </li>  
+                    <li class="nav-res__menu"><a href="#">More</a>
+                        <input type="checkbox" id="nav-down3">
+                        <label for="nav-down3"><i class="bi bi-caret-down-fill"></i></label>
+                        <ul class="subnav-res3">
+                            <li class="nav-menu__child"><i class="bi bi-dash"></i></i><a href="#">StarGazing</a></li>
+                            <li class="nav-menu__child"><i class="bi bi-dash"></i></i><a href="#">Comet</a></li>
+                            <li class="nav-menu__child"><i class="bi bi-dash"></i></i><a href="#">Constellation</a></li>
+                            <li class="nav-menu__child"><i class="bi bi-dash"></i></i></i><a href="#">News</a></li>
+                            <li class="nav-menu__child"><i class="bi bi-dash"></i></i><a href="#">Observatories</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-res__menu"><a href="#">About Us</a></li>
+                </ul>  
+            </div> 
+        </div>
+
+        <!-- banner -->
+
+        <div class="banner">
+            <img src="./img/Star1.jpg" alt="background-destination-desktop" class="banner-img">
+
+            <div class="banner-link">
+                <p class="banner-title">SUPER COMET</p>
+                <p class="banner-desc">Dirty Snow Ball</p>
+                <div class="banner-click">
+                    <button class="banner-click__button"><a href="#content-seconds__post">More details</a></button>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- content 1 -->
+
+        <div class="content-first">
+            <div class="content-first__grid grid wide">
+                <div class="content-first__row body-row_post">
+
+                    <div class="content-first__setting col l-6 m-10 c-10">
+                        <div class="content-first__post-1">
+                            <p class="content-first__title"> What is comet?</p>
+                            <p class="content-first__desc">A comet is a celestial 
+                                body that flies in space, it is almost an asteroid, 
+                                but is not made of rock, but mainly ice. The reason 
+                                they are called comets because they often have strange 
+                                shapes, sharp heads, and big tails like a broom. Scientists 
+                                have described it as "a dirty snowball" because it contains 
+                                carbonic, methane, frozen water mixed with dust and minerals.
+                            </p>
+                            <p class="content-first__desc">Most stars have very flat elliptical 
+                                orbits. Outside random space analysis it is. The tail is obtained 
+                                when passing through the sun, the star's ice melts and forms a shirt. 
+                                But it is also because of moving closer to the sun that the tail of 
+                                the star becomes shorter and shorter because the ice does not escape.
+                            </p>
+
+                        </div>
+                    </div>
+
+                    <div class="content-first__setting col l-6 m-10 c-10">
+                        <div class="content-first__gif-1">
+                            <img src="./img/Comet Space GIF - Comet Space Stars - Discover & Share GIFs.gif" alt="Comet Space Stars" class="content-first__gif">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+    </div>
+</body>
+</html>

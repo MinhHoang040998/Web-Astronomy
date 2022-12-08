@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/bigbang.css">
+    <link rel="stylesheet" href="../reset/reset.css">
+    <link rel="stylesheet" href="../grid/grid_astronomy.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" type="images/png" href="/logo-icon/solar-system.ico"/>
+    <title>Document</title>
+</head>
+<body>
+    <div class="astronomy-home">
+        <div class="astronomy-home__tabnav">
+            <!-- logo -->
+            <img src="./img/logo png.png" alt="logo astronomy" class="astronomy-home__logo">
+            <!-- live -->
+            <p class="astronomy-home__numberlives">live: 220</p>
+
+            <!-- menu -->
+                <div class="astronomy-home__tabchild">
+                    <div class="astronomy-home__menuPlanets">
+                        <h3 class="astronomy-home__text">planets</h3>
+                        <div class="astronomy-home__menu-first">
+                            <ul class="astronomy-home__menu-first-Planets">
+                                <li class="astronomy-home__menu-item-Planets">Mercury</li>
+                                <li class="astronomy-home__menu-item-Planets">Venus</li>
+                                <li class="astronomy-home__menu-item-Planets">Earth</li>
+                                <li class="astronomy-home__menu-item-Planets">Mars</li>
+                                <li class="astronomy-home__menu-item-Planets">Jupiter</li>
+                                <li class="astronomy-home__menu-item-Planets">Saturn</li>
+                                <li class="astronomy-home__menu-item-Planets">Uranus</li>
+                                <li class="astronomy-home__menu-item-Planets">Neptune</li>
+                                <li class="astronomy-home__menu-item-Planets">Dwarf Planet</li>
+                                <li class="astronomy-home__menu-item-Planets">Planet Nine</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+
+            <div class="astronomy-home__tabchild">
+                <div class="astronomy-home__menuEvents">
+                    <h3 class="astronomy-home__text">events the planets</h3>
+                    <div class="astronomy-home__menu-seconds">
+                        <ul class="astronomy-home__menu-seconds-events">
+                            <li class="astronomy-home__menu-item-events"><a href="../Eclipse_events/Eclipse.html" class="astronomy-home__EclipseLink">Eclipse</a></li>
+                            <li class="astronomy-home__menu-item-events"><a href="../bigbang_events/bigbang.html" class="astronomy-home__bigbangeLink">BigBang</a></li>
+                            <li class="astronomy-home__menu-item-events"><a href="../evolved_Earth/evolved-Earth.html" class="astronomy-home__EvolvedLink">Evolved Earth</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="astronomy-home__tabchild">
+                <div class="astronomy-home__menuMore">
+                    <h3 class="astronomy-home__text">more</h3>
+                    <div class="astronomy-home__menu-three">
+                        <ul class="astronomy-home__menu-three-more">
+                            <li class="astronomy-home__menu-item-more">StarGazing</li>
+                            <li class="astronomy-home__menu-item-more">Comet</li>
+                            <li class="astronomy-home__menu-item-more">Constellation</li>
+                            <li class="astronomy-home__menu-item-more">News</li>
+                            <li class="astronomy-home__menu-item-more">Observatories</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="astronomy-home__tabchild">
+                <div class="astronomy-home__menuAbout">
+                    <h3 class="astronomy-home__text">about</h3>
+                    <div class="astronomy-home__menu-four">
+                        <ul class="astronomy-home__menu-four-about">
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="astronomy-home__time-lives">
+                <span>Times live:</span>
+                <span id="hours">00</span>
+                <span>:</span>
+                <span id="minutes">00</span>
+                <span>:</span>
+                <span id="seconds">00</span>
+                <span id="session">AM</span>
+            </div>
+            
+            <div class="astronomy-home__menu-child">
+                <i class="fa-sharp fa-solid fa-bars astronomy-home__icon-menu"></i>
+            </div>
+
+        </div>
+
+        <!-- banner -->
+        <div class="banner">
+
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="banner-img">
+                        <img src="./img/bigbang-banner-1.jpeg" alt="" class="banner-img__slider">
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="banner-img">
+                        <img src="./img/bigbang-banner-2.jpeg" alt="" class="banner-img__slider">
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="banner-img">
+                        <img src="./img/bigbang-banner-3.jpeg" alt="" class="banner-img__slider">
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="banner-img">
+                        <img src="./img/bigbang-banner-4.webp" alt="" class="banner-img__slider">
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+            
+        </div>
+        <div class="body">
+
+            <!-- post 1 -->
+
+            <div class="body__question">
+
+                <div class="body__question-1">
+
+                    <span class="body-name__Question">What is the Big Bang?</span>
+                    <p class="body-answer__Question-1st">
+                        The big bang is how astronomers explain the way the universe began. 
+                        It is the idea that the universe began as just a single point, 
+                        then expanded and stretched to grow as large as it is right now—and 
+                        it is still stretching!
+                    </p>
+
+                </div>
+
+                <!-- post 2 -->
+
+                <div class="body__question-2">
+
+                    <span class="body-name__Question-2">What is the Big Bang?</span>
+
+                    <div class="body-question__answer grid wide">
+
+                        <div class="body-answer__row  body-row_post-3">
+
+                                <div class="col l-4 c-12 m-12">
+                                    <div class="body-gif">
+                                        <img src="./img/gif-bigbang-events-question2.gif" alt="" class="body-gif__answer">
+                                    </div>
+                                </div>
+
+                                <div class="col l-8 c-12 m-12">
+                                    <div class="body-answer__gif">
+                                        <p class="body-answer__desc1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                                            Exercitationem quia cupiditate molestiae modi ab, consectetur molestias quo voluptas 
+                                            debitis officia, repellat asperiores porro, nihil rem sequi iusto! Quasi, fugiat laudantium.</p>
+                                    </div>
+                                </div>
+                        </div>
+        
+                    </div>
+
+                </div>
+
+                <!-- post 3 -->
+
+                <div class="body__question-1">
+
+                    <span class="body-name__Question">What an Idea!</span>
+                    <p class="body-answer__desc-3">
+                        The universe is a very big place, and it’s been around 
+                        for a very long time. Thinking about how it all started 
+                        is hard to imagine.
+                    </p>
+
+                </div>
+
+
+                 <!-- post 4 -->
+
+                 <div class="body__question-1">
+
+                    <span class="body-name__Question">Some More Information</span>
+                    <p class="body-answer__desc-3">
+                        Just two years later, an astronomer named Edwin Hubble noticed 
+                        that other galaxies were moving away from us. And that’s not all. 
+                        The farthest galaxies were moving faster than the ones close to us.
+                    </p>
+
+                    <div class="body-desc__img-3">
+                        <img src="./img/img-bigbang-1.png" alt="bigbang-img" class="body__img-3">
+                    </div>
+
+                    <p class="body-answer__desc-3">
+                        This meant that the universe was still expanding, just like Lemaître 
+                        thought. If things were moving apart, it meant that long ago, everything 
+                        had been close together.
+                    </p>
+
+                    <div class="body-desc__img-4">
+                        <img src="./img/bigbang-waoo.png" alt="bigbang-img" class="body__img-4">
+                    </div>
+
+                    <p class="body-answer__desc-3">
+                        Everything we can see in our universe today—stars, planets, comets, 
+                        asteroids—they weren't there at the beginning. Where did they come from?
+                    </p>
+
+                </div>
+
+
+
+                 <!-- post 5 -->
+
+                <div class="body__question-1">
+
+                    <span class="body-name__Question">A Tiny, Hot Beginning</span>
+                    
+                    <p class="body-answer__desc-3">
+                        When the universe began, it was just hot, tiny particles mixed 
+                        with light and energy. It was nothing like what we see now. As 
+                        everything expanded and took up more space, it cooled down.
+                    </p>
+
+                    <p class="body-answer__desc-3">
+                        The tiny particles grouped together. They formed atoms. Then those 
+                        atoms grouped together. Over lots of time, atoms came together to 
+                        form stars and galaxies.
+                    </p>
+
+                    <p class="body-answer__desc-3">
+                        The first stars created bigger atoms and groups of atoms. That led 
+                        to more stars being born. At the same time, galaxies were crashing 
+                        and grouping together. As new stars were being born and dying, then 
+                        things like asteroids, comets, planets, and black holes formed!
+                    </p>
+
+
+
+                    <div class="body-desc__img-5">
+                        <img src="./img/black-hole-cartoon.en.png" alt="black-hole-cartoon" class="body__img-5">
+                    </div>
+
+                </div>
+
+
+                 <!-- post 6 -->
+
+                <div class="body__question-1">
+
+                    <span class="body-name__Question">A Super Long Time</span>
+                    
+                    <p class="body-answer__desc-3">
+                        How long did all of this take? Well, we now know that the 
+                        universe is 13,800,000,000 years old—that’s 13.8 billion. 
+                        That is a very long time.
+
+                </div>
+
+                <!-- post 7 -->
+
+                <div class="body__question-1">
+
+                    <span class="body-name__Question">What's in a Name?</span>
+                    
+                    <p class="body-answer__desc-3">
+                        That’s pretty much how the universe began. Because it got 
+                        so big and led to such great things, some people call it 
+                        the "Big Bang." But maybe a better name would be the 
+                        "Everywhere Stretch." What do you think?
+                    </p>
+
+                </div>
+
+
+                
+
+             </div>
+
+        </div>
+
+        <div class="news-more">
+            <div class="swiper mySwiper2">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">Slide 1</div>
+                    <div class="swiper-slide">Slide 2</div>
+                    <div class="swiper-slide">Slide 3</div>
+                    <div class="swiper-slide">Slide 4</div>
+                    <div class="swiper-slide">Slide 5</div>
+                    <div class="swiper-slide">Slide 6</div>
+                    <div class="swiper-slide">Slide 7</div>
+                    <div class="swiper-slide">Slide 8</div>
+                    <div class="swiper-slide">Slide 9</div>
+                </div>
+            </div>
+         </div>
+
+        
+       
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="./js/bigbang.js"></script>
+</body>
+</html>
